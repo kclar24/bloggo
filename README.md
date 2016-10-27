@@ -7,3 +7,6 @@ create repo
 
 rails g scaffold ...
 migrate
+
+set home routes
+create posts
