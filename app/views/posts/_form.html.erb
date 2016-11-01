@@ -16,7 +16,7 @@
     <%= f.text_field :title %>
   </div>
 
-  <div class="field">
+  <div class="field hidden">
     <%= f.label :author %>
     <%= f.text_field :author, value: current_user.email %>
   </div>
@@ -24,6 +24,10 @@
   <div class="field">
     <%= f.label :entry %>
     <%= f.text_area :entry %>
+  </div>
+
+  <div class="field">
+    <%= f.number_field :user_id, value: current_user.id %>
   </div>
 
   <div class="actions">
