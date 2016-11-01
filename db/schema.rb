@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 20161101144449) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "post_id"
-    t.integer  "user_id_id"
-    t.index ["user_id_id"], name: "index_comments_on_user_id_id"
+    t.integer  "user_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 20161101144449) do
     t.text     "entry"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "user_id_id"
-    t.index ["user_id_id"], name: "index_posts_on_user_id_id"
+    t.integer  "user_id"
+    t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
