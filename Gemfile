@@ -49,6 +49,8 @@ group :production do
 # I created this group so I could run thin in dev and puma in production.
   gem 'puma', '~> 3.0'
   # Use SCSS for stylesheets
+  gem 'rails_12factor'
+  # REQUIRED by Heroku
 
 end
 
